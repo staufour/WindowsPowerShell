@@ -1,9 +1,9 @@
 Import-Module posh-docker
 
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+
 $console = $host.UI.RawUI
 $console.BackgroundColor = "black"
-
-Set-Location ~
 
 Clear-Host
 
